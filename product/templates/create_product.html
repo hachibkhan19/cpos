@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="POST">
+        {% csrf_token %}
+        <!-- <div>
+            <label for="">Product category</label>
+            <input type="text" name="product_category">
+        </div>        
+        <br><br>
+        <div>
+            <label for="">Product seller</label>
+            <input type="text" name="product_seller">
+        </div>        
+        <br><br>
+        <div>
+            <label for="">Product origin</label>
+            <input type="text" name="product_origin">
+        </div>        
+        <br><br> -->
+
+        <div>
+            <label for="">Product name</label>
+            <input type="text" name="product_name">
+        </div>        
+        <br>
+        <br>
+        <div>
+            <label for="">Product code</label>
+            <input type="text" name="product_code">
+        </div>        
+        <br>
+        <br>
+        <div>
+            <label for="">Product purchase price</label>
+            <input type="text" name="product_purchase_price">
+        </div>        
+        <br>
+        <br>
+        <div>
+            <label for="">Product selling price</label>
+            <input type="text" name="product_selling_price">
+        </div>        
+        <br>
+        <button type="submit">create product</button>
+    </form>
+
+</body>
+</html>

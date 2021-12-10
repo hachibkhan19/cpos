@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crytonics | Login</title>
+</head>
+<body>
+
+    <div>
+        {% if error %}
+        <span>{{error}}</span>
+        {% endif %}
+    </div>
+    <br>
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="user">Username</label>
+            <input type="text" id="user" name="username">
+            <br><br>
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password">
+        </div>
+        <br>
+        <button>sign in</button>
+    </form>
+</body>
+</html>
